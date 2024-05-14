@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The University of Camnodia</title>
+
+    <!-- link related -->
+    <link rel="stylesheet" href="style\news.css">
+    <!-- icon -->
+    <link rel="icon" type="image/type-x" href="image/icon.jpg">
+
+    <!-- font -->
+    <!-- link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+
+        :root {
+        --clr-font: hsl(0, 0%, 100%);
+        --clr-hoverfont: hsl(240, 100%, 31%);
+        --clr-innerbackground: hsl(240, 100%, 31%);
+        --clr-mainbg: hsl(0, 0%, 100%);
+        --clr-hovereffect: hsl(200, 100%, 99%);
+        --clr-black: hsl(0, 0%, 0%);
+        }
+
+
+        *, *:before, *:after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        color: var(--clr-black);
+        height: 100%; /* Ensure the full height of the page is used */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        }
+        /* marquee part  */
+
+        .marquee {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 90px; /* Set a fixed height */
+        margin: 0.5em; /* Center the marquee in the available space */
+        background-color: var(--clr-innerbackground);
+        border-radius: 0.2em;
+        overflow: hidden;
+        }
+
+        .marquee marquee {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100%; /* Full height for vertical centering */
+        }
+
+        .marquee marquee img {
+            width: 150px;
+            height: 50px;
+            margin-top: 5px;
+            margin-right: 0.3em;
+            vertical-align: middle;
+        }
+
+        .marquee marquee span {
+                color: var(--clr-font);
+                vertical-align: middle;
+        }
+
+        .marquee marquee .first-style {
+            font-size: 1.3em;
+            font-weight: 500;
+            font-family: "Noto Sans Khmer", sans-serif;
+        }
+
+        .marquee marquee .second-style {
+            font-size: 1.3em;
+            font-weight: 500;
+            font-family: "Kanit", sans-serif;
+            margin-right: 5em;
+        }
+
+        .info {
+                margin-top: 2em;
+                margin-right: 0.5em;
+                margin-left: 0.5em;
+        }
+
+        .first-style {
+        font-size: 1.3em;
+        font-weight: 500;
+        font-family: "Noto Sans Khmer", sans-serif;     
+        }
+        
+        .second-style {
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: "Kanit", sans-serif;
+        margin-right: 5em;
+        }
+
+        .table {
+                height: auto;
+        }
+        .table table{
+                width: 100%;
+                /* border-collapse: collapse; */
+        }
+
+        th,tr,td {
+                color: var(--clr-black);
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                padding: 0.5em 0.7em;
+                border: 3px solid var(--clr-innerbackground);        }
+    </style>
+
+</head>
+<body>
+        <header>
+    <div class="marquee">
+        <marquee behavior="scroll" direction="up" scrollamount="7">
+        <img src="image/cost.jpg">
+                <span class="first-style">ស្វាគមន័!</span>
+                <span class="second-style">Collage CosT-Major Information Technology</span>
+
+        </marquee>
+</div>
+
+    <div class="info" style="margin: 1em;">
+        <span class="first-style">ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។ សម្រាប់ប្អូនៗសិស្សានុសិស្ស ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។ សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។</span><br><br>
+        <span class="second-style">Welcome to College of Science and Technology of The University of Cambodia. For everyone who wishes to pursue for any AA and BA degrees of the study programs, please register now or visit the campus of The University of Cambodia.</span><br><br>
+        <span class="second-style">Our Information Technology Management for Business (ITMB) degree covers a vibrant mix of transferable skills and knowledge for those who want exciting and challenging management or professional careers designing, developing and implementing technology solutions for businesses. The ITMB degree is designed to offer an insight into the real world of IT. It allows you to learn the people and project management skills required to be a successful IT professional.</span><br><br>
+        <h2 class="second-style" style="font-size: 2em; font-weight: 500;">Programs Learning Outcomes</h2><br>
+        <span class="second-style">As a graduate, you will be prepared to reliably demonstrate the ability to: </span><br><br>
+        <ul class="second-style">1-Analyze business problems and make ethically sound strategic decisions enabled by Information Technology (IT).</ul>
+        <ul class="second-style">2-anage a business technology project within a cross-functional and multi-disciplinary team by applying project management principles.</ul>
+        <ul class="second-style">3-Adopt operations management principles and information technology to improve efficiency and effectiveness of business processes.</ul>
+        <ul class="second-style">4-Propose strategic and operational solutions by applying principles of management accounting and financial analysis.</ul>
+        <ul class="second-style">5-Design information technology solutions that automate and support business processes.</ul>        
+        <ul class="second-style">6-Model ethical, legal and professional codes of conduct of the Canadian business environment and global marketplace.</ul>
+        <ul class="second-style">7-Build data solutions to support business operations, strategic decision making and business planning to improve organizational performance and ensure adequate risk management.</ul>
+        <ul class="second-style">8-Evaluate organizational structures and management processes, with a focus on small and medium-sized enterprises, to improve organizational performance.</ul>
+        <ul class="second-style">9-Provide direction about the opportunities for the integration of technology, commerce and marketing to support innovative digital business models.</ul>
+    </div>
+    
+
+        <div class="span">
+                <div class="second-style" style="background-color: var(--clr-innerbackground); color: var(--clr-font); font-size: 1.7em; font-weight: 500; width: 100%; height: 40px; text-align: center; margin: 0.5em;">Majors Offering in Collage of Science and Technology</div>
+        </div>
+
+        <div class="table" style="margin: 1em;">
+                <table>
+                        <tr s1tyle="background-color: tomato;">
+                                <th style="background-color: lightgray">Major</th>
+                                <th style="background-color: lightgray">Associate, Bachelor</th>
+                                <th style="background-color: lightgray">Master,PhD</th>
+                
+                            </tr>
+                            <tr>
+                                <td style="background-color: lightgray">Computer Science (offering)</td>
+                                <td style="background-color: lightgray">AA and BA</td>
+                                <td style="background-color: lightgray;">MS and PhD</td>
+                
+                            </tr>
+                            <tr s1tyle="background-color: rgb(66, 250, 180);">
+                                <td style="background-color: lightgray">Information Technology (offering)</td>
+                                <td style="background-color: lightgray;">BA</td>
+                                <td style="background-color: lightgray;">Master</td>
+                
+                            </tr>
+                            <tr style="background-color: lightgray;">
+                                <td style="background-color: lightgray;">Electronics and Telecommunications (Not yet Offering)</td>
+                                <td style="background-color: lightgray;">BA</td> 
+                                <td style="background-color: lightgray;">Master</td>
+                         </tr>
+                </table>
+        </div>
+
+        </header>
+</body>
+</html>

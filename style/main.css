@@ -1,0 +1,251 @@
+:root {
+    --clr-font: hsl(0, 0%, 100%);
+    --clr-hoverfont: hsl(240, 100%, 31%);
+    --clr-innerbackground: hsl(240, 100%, 31%);
+    --clr-mainbg: hsl(0, 0%, 100%);
+    --clr-hovereffect: hsl(200, 100%, 99%);
+    --clr-black: hsl(0, 0%, 0%);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--clr-font);
+    background-color: white;
+    overflow-x: hidden;
+
+}
+
+header {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    align-self: center;
+    justify-content: center;
+    width: calc(100% - 4em);  /* Adjust the width as needed */
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner img {
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: 10vh;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 0.5em;
+}
+
+.container {
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 0.3em;
+}
+
+.container .navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2em;
+    background-color: var(--clr-innerbackground);
+    border-radius: 0.3em;
+    /* gap: 1.2em; */
+}
+
+.container .navbar ul li a {
+    padding: 0.25em 1em;
+    color: var(--clr-font);
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: "Kanit", sans-serif;
+    border-radius: 0.1em;
+    transition: color 400ms ease, background-color 400ms ease, border-radius 400ms ease;
+}
+
+.container .navbar ul li a:hover {
+    color: var(--clr-hoverfont);
+    background-color: var(--clr-hovereffect);
+    border-radius: 0.5em;
+}
+
+/* Welcome */
+
+.welcome {
+    margin-top: 0.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.welcome p {
+    color: black;
+}
+
+.welcome .first-style {
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+.welcome .second-style {
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+}
+
+/* image-1 */
+
+.image-1 {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7em 1em;
+    gap: 1.5em;
+}
+
+.image-1 img {
+    width: calc(100% / 3);
+    height: 290px;
+    border-radius: 0.5em;
+    border: 2px solid var(--clr-innerbackground);
+    border-style: groove;
+    box-shadow: 0 0 0.1em var(--clr-black);
+}
+
+/* marquee part  */
+
+.marquee {
+    width: 100%;
+    height: 40px;
+    margin: 0.5em 1em;
+    align-items: center;
+    background-color: var(--clr-innerbackground);
+    border-radius: 0.2em;
+}
+
+.marquee marquee img {
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.marquee marquee span {
+    vertical-align: middle;
+}
+
+.marquee marquee .first-style {
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+
+.marquee marquee .second-style {
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    margin-right: 20em
+}
+
+/* image-2 */
+
+.image-2 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-right: 2em;
+    margin-left: 2em;
+    gap: 1.5em;
+}
+
+.image-2 img {
+    width: calc(100% / 3);
+    height: 290px;
+    border-radius: 0.5em;
+    border: 2px solid var(--clr-innerbackground);
+    border-style: groove;
+    box-shadow: 0 0 0.1em var(--clr-black);
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    margin-top: 8em;
+    background: var(--clr-innerbackground);
+}
+
+footer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+footer .footer p {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Kanit", sans-serif;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/* Dropdown List */
+.container .navbar ul li .dropdown {
+    display: none;
+    position: absolute;
+    height: auto;
+    color: var(--clr-font);
+    padding-left: 0;
+}
+
+.container .navbar ul li:hover .dropdown {
+    display: block;
+    border-radius: 0 0 1em 1em;
+}
+
+.container .navbar ul li .dropdown li a {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    color: var(--clr-font);
+    background-color: darkblue;
+    border-bottom: 1.5px solid white;
+    border-radius: 0.2em;
+    text-align: left;
+    transition: color 300ms ease, background-color 300ms ease, border-radius 300ms ease;
+}
+
+.container .navbar ul li .dropdown li a:hover {
+    background-color: var(--clr-font);
+    color: var(--clr-innerbackground);
+    border-radius: 0.5em;
+}
+
+

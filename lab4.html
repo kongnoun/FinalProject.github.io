@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The University of Cambodia</title>
+
+    <!-- link related -->
+    <link rel="stylesheet" href="style/news.css">
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+
+    <!-- font -->
+    <!-- link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Khmer:wght@100..900&family=Noto+Serif+Khmer:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --clr-font: hsl(0, 0%, 100%);
+            --clr-hoverfont: hsl(240, 100%, 31%);
+            --clr-innerbackground: hsl(240, 100%, 31%);
+            --clr-mainbg: hsl(0, 0%, 100%);
+            --clr-hovereffect: hsl(200, 100%, 99%);
+            --clr-black: hsl(0, 0%, 0%);
+        }
+
+        *, *:before, *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            color: var(--clr-black);
+        }
+
+        header {
+            margin: 1em;
+        }
+
+        .first-style {
+            font-size: 1.3em;
+            font-weight: 500;
+            font-family: "Noto Sans Khmer", sans-serif;     
+        }
+
+        .second-style {
+            font-size: 1.3em;
+            font-weight: 400;
+            font-family: "Kanit", sans-serif;
+            margin-right: 5em;
+        }
+
+        .table {
+            height: auto;
+        }
+
+        .table table {
+            width: 100%;
+        }
+
+        table {
+            padding: 0.5px;
+            border: 2px solid red;
+        }
+
+        th, tr, td {
+            color: var(--clr-black);
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            padding: 0.1em 0.2em;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-family: sans-serif; margin: 1em; font-weight: 500; text-align: center;">
+            Welcome to College of Science and Technology of The University of Cambodia. For everyone who wishes to pursue for any AA and BA degrees of the study programs, please register now or visit the campus of The University of Cambodia.
+        </div>
+
+        <div class="second-style" style="background-color: var(--clr-innerbackground); color: var(--clr-font); font-size: 1.4em; font-weight: 500; width: 100%; height: auto; text-align: center; margin-right: 2em; vertical-align: middle;">
+            Majors Offering in College of Science and Technology
+        </div>
+
+        <div class="image" style=" display: flex; justify-content: center; margin: 1em; gap: 1em;">
+                <img src="image/12.jpg" alt="photo" style="width: 500px; height: 300px;">
+                <img src="image/13.jpg" alt="photo" style="width: 500px; height: 300px;">
+        </div>
+
+        <div class="table" style="margin: 0.5em;">
+            <table>
+                <h3 style="font-family: sans-serif; text-align: center;">Computer Labs Universisty of Cambodia</h3>
+                <tr style="background-color: tomato;">
+                    <th style="background-color: lightgray; font-weight: 600;">Multimedia Lab</th>
+                    <th style="background-color: lightgray; font-weight: 600;">E-learning Lab</th>
+                    <th style="background-color: lightgray; font-weight: 600;">Networking Lab</th>
+                    <th style="background-color: lightgray; font-weight: 600;">IT-Center Lab</th>
+                </tr>
+                <tr>
+                    <td style="background-color: lightgray">Graphic Design</td>
+                    <td style="background-color: lightgray">Graphic Design</td>
+                    <td style="background-color: lightgray;">Networking Design</td>
+                    <td style="background-color: lightgray;">Computer Application</td>
+                </tr>
+                <tr style="background-color: rgb(66, 250, 180);">
+                    <td style="background-color: lightgray">Computer Application</td>
+                    <td style="background-color: lightgray;">Produce Videos Contents</td>
+                    <td style="background-color: lightgray;" colspan="2"></td>
+                </tr>
+                <tr style="background-color: rgb(66, 250, 180);">
+                    <td style="background-color: lightgray">Mobile Application</td>
+                    <td style="background-color: lightgray;" colspan="3"></td>
+                </tr>
+            </table>
+        </div>
+    </header>
+</body>
+</html>
